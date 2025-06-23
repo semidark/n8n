@@ -1314,11 +1314,6 @@ export class NextCloud implements INodeType {
 						'd:getlastmodified': 'lastModified',
 						'd:getcontentlength': 'contentLength',
 						'd:getcontenttype': 'contentType',
-
-						// handled below
-						// 'd:getetag': 'getetag',
-						// 'd:resourcetype': 'resourcetype',
-
 						'oc:fileid': 'fileId',
 						'oc:permissions': 'permissions',
 						'oc:size': 'size',
@@ -1329,6 +1324,25 @@ export class NextCloud implements INodeType {
 						'oc:share-types': 'shareTypes',
 						'nc:contained-folder-count': 'containedFolderCount',
 						'nc:contained-file-count': 'containedFileCount',
+						// --- Added missing fields ---
+						'd:creationdate': 'creationDate',
+						'd:getcontentlanguage': 'contentLanguage',
+						'd:displayname': 'displayName',
+						'd:lockdiscovery': 'lockDiscovery',
+						'd:quota-available-bytes': 'quotaAvailableBytes',
+						'd:quota-used-bytes': 'quotaUsedBytes',
+						'd:supportedlock': 'supportedLock',
+						'oc:id': 'instanceWideFileId',
+						'oc:downloadURL': 'downloadUrl',
+						'nc:creation_time': 'creationTimeTimestamp',
+						'nc:mount-type': 'mountType',
+						'nc:hide-download': 'hideDownload',
+						'nc:is-encrypted': 'isEncrypted',
+						'nc:is-mount-root': 'isMountRoot',
+						'oc:tags': 'tags',
+						'oc:comments-href': 'commentsHref',
+						'oc:comments-count': 'commentsCount',
+						'oc:owner-id': 'ownerId',
 					};
 
 					if (
